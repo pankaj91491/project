@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script src="promis.js"></script> -->
+    <!-- <script src="pattern1.js"></script> ? -->
+    <!-- <script src="fibonacci.js"></script>  -->
+     
+
+    <script>
+        
+   //palindrome number find kr rha hu dosto:
+
+    const myRevValue=()=>{
+        let value = document.getElementById("value").value;
+      
+    let revValue=value.toString().split("").reverse().join("");
+    let strvalue=value.toString();
+    if(revValue==strvalue){
+       document.getElementById('para').innerHTML='palindrome';
+        console.log("it is palindrome")
+    }
+    else{
+        document.getElementById('p1').innerHTML='not palindrome';
+         console.log("it is not palindrome")
+    }
+   // console.log(revValue);
+}
+
+    </script>
+
+</head>
+<body>
+<div class="con">
+    enter your value:<input type="text" type="number" id="value">
+    <button onclick="myRevValue(value)" type="submit" id="submit">fetch</button>
+   <div id="para"></div>
+   <div id="p1"></div>
+</div>
+     
+</body>
+</html>
